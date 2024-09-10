@@ -14,6 +14,7 @@ import blogRoutes  from   "./routes/blog_routes.js"
 import cookieParser from "cookie-parser";
 import crypto from 'crypto';
 import { initializeSocket } from "./socket.js"
+import path from 'path';
 
 
 dotenv.config();
@@ -33,6 +34,7 @@ mongoose
     .then(()=>{
         console.log("Database is connected")
     })
+    const __dirname = path.resolve();
 // app.listen(PORT,()=>{
 //     console.log(`Server is running on port ${PORT}`);
 // })
