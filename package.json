@@ -5,17 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node Backend/index.js",
-    "dev": "nodemon Backend/index.js",
-    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
+    "start": "node Backend/index.js",  // Ensure the folder name is correct (Backend or backend)
+    "dev": "nodemon Backend/index.js", // Check case sensitivity here
+    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend" // Ensure Frontend folder exists
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "bcryptjs": "^2.4.3",
-    "cookie-parser": "^1.4.6",
-    "cookieparser": "^0.1.0",
+    "cookie-parser": "^1.4.6",  // Removed duplicate "cookieparser"
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
